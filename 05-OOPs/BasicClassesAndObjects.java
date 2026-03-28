@@ -39,11 +39,11 @@ public class BasicClassesAndObjects {
     public static void main(String[] args) {
         
         System.out.println("---> 1. Employee Class <---");
-        Employee harry = new Employee();
-        harry.id = 12;
-        harry.salary = 34000;
-        harry.name = "Muhammad Akram";
-        harry.printDetail();
+        Employee akram = new Employee();
+        akram.id = 12;
+        akram.salary = 34000;
+        akram.name = "Muhammad Akram";
+        akram.printDetail();
 
         System.out.println("\n---> 2. Cellphone Class <---");
         Cellphone oppo = new Cellphone();
