@@ -42,15 +42,15 @@ public class CustomExceptions {
             double area = calculateArea(radius);
             
             // Using printf to format the double value to 2 decimal places
-            System.out.printf("✅ Success! Area of the circle is: %.2f\n", area);
+            System.out.printf("Success! Area of the circle is: %.2f\n", area);
             
         } catch (NegativeRadiusException e) {
-            System.out.println("\n❌ Custom Exception Caught!");
+            System.out.println("\n Custom Exception Caught!");
             System.out.println("Message: " + e.getMessage());
             System.out.println("ToString: " + e.toString());
         } catch (Exception e) {
             // This will catch errors if the user types letters like "abc" instead of a number
-            System.out.println("\n❌ Invalid Input! Please enter a valid integer number.");
+            System.out.println("\n Invalid Input! Please enter a valid integer number.");
         } finally {
             System.out.println("\nEnd of the program. Handled gracefully!");
         }
