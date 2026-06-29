@@ -29,22 +29,22 @@ class Account {
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
-            System.out.println("✅ Rs. " + amount + " deposited successfully.");
+            System.out.println("Rs. " + amount + " deposited successfully.");
             System.out.println("New Balance: Rs. " + balance);
         } else {
-            System.out.println("❌ Invalid deposit amount!");
+            System.out.println("Invalid deposit amount!");
         }
     }
 
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
-            System.out.println("✅ Rs. " + amount + " withdrawn successfully.");
+            System.out.println("Rs. " + amount + " withdrawn successfully.");
             System.out.println("New Balance: Rs. " + balance);
         } else if (amount > balance) {
-            System.out.println("❌ Insufficient Balance! You don't have enough funds in your account.");
+            System.out.println("Insufficient Balance! You don't have enough funds in your account.");
         } else {
-            System.out.println("❌ Invalid withdrawal amount!");
+            System.out.println("Invalid withdrawal amount!");
         }
     }
 
@@ -84,7 +84,7 @@ public class BankManagementSystem {
             try {
                 choice = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("❌ Please enter a valid number!");
+                System.out.println(" Please enter a valid number!");
                 continue;
             }
 
@@ -109,7 +109,7 @@ public class BankManagementSystem {
                     isRunning = false;
                     break;
                 default:
-                    System.out.println("❌ Invalid choice. Please try again.");
+                    System.out.println("Invalid choice. Please try again.");
             }
         }
         scanner.close();
