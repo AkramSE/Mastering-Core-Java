@@ -120,7 +120,7 @@ public class BankManagementSystem {
         String accNo = scanner.nextLine();
 
         if (accountsDatabase.containsKey(accNo)) {
-            System.out.println("❌ This Account Number already exists!");
+            System.out.println(" This Account Number already exists!");
             return;
         }
 
@@ -132,7 +132,7 @@ public class BankManagementSystem {
 
         Account newAccount = new Account(accNo, name, initialDeposit);
         accountsDatabase.put(accNo, newAccount);
-        System.out.println("✅ Account created successfully!");
+        System.out.println("Account created successfully!");
     }
 
     private static void performDeposit() {
