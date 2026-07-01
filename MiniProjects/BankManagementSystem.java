@@ -145,7 +145,7 @@ public class BankManagementSystem {
             double amount = Double.parseDouble(scanner.nextLine());
             account.deposit(amount);
         } else {
-            System.out.println("❌ Account not found!");
+            System.out.println(" Account not found!");
         }
     }
 
@@ -159,7 +159,7 @@ public class BankManagementSystem {
             double amount = Double.parseDouble(scanner.nextLine());
             account.withdraw(amount);
         } else {
-            System.out.println("❌ Account not found!");
+            System.out.println(" Account not found!");
         }
     }
 
@@ -171,7 +171,7 @@ public class BankManagementSystem {
         if (account != null) {
             account.displayAccountInfo();
         } else {
-            System.out.println("❌ Account not found!");
+            System.out.println(" Account not found!");
         }
     }
 
